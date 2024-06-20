@@ -166,7 +166,28 @@
 }
 
 .smileys:hover svg path {
-    fill: rgb(173, 173, 63); 
+    fill: #ff994f; 
+}
+
+.feedback {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    padding: 10px;
+    background-color: #e9f6ff;
+    border: 1px solid #b3e5fc;
+    border-radius: 5px;
+}
+.feedback img {
+    margin-right: 10px;
+    border-radius: 50%;
+}
+.feedback b {
+    color: #333;
+    font-size: 16px;
+}
+.feedback br {
+    display: none; /* Hide the <br> as it is not needed with flexbox layout */
 }
 
 .form-container {
@@ -175,14 +196,10 @@
     border-radius: 5px;
     background-color: #f9f9f9;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
 }
 .form-group {
     margin-bottom: 15px;
-}
-label {
-    display: block;
-    margin-bottom: 5px;
-    font-weight: bold;
 }
 input[type="text"], textarea {
     width: 100%;
@@ -200,11 +217,18 @@ input[type="submit"] {
     color: white;
     padding: 10px 20px;
     border: none;
-    border-radius: 5px;
+    border-radius: 50px;
     cursor: pointer;
     font-size: 16px;
+    display: block;
+    margin: 10px auto;
+    text-align: center;
 }
 input[type="submit"]:hover {
     background-color: #45a049;
+}
+input[type="text"]:hover, textarea:hover {
+    /* font-weight: bold;  Make text bold on hover */
+    border: 2px solid #ff994f;
 }
 
